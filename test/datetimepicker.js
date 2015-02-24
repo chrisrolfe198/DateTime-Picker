@@ -9,7 +9,8 @@ describe("DateTimePicker", function() {
  
     it("should set a date if one is provided", function() {
       var cow = new DateTimePicker("Tuesday, 24 February 2015");
-      expect(cow.currentDate.getTime()).to.equal(new Date("Tuesday, 24 February 2015").getTime());
+      expect(Math.round(cow.currentDate.getTime() / 1000))
+        .to.equal(Math.round(new Date("Tuesday, 24 February 2015").getTime() / 1000));
     });
   });
 });
