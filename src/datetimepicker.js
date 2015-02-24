@@ -9,7 +9,6 @@
 		}
 		this.calendar = new exports.Calendar(this.currentDate.getMonth(), this.currentDate.getFullYear());
 		this.calendar.generate_html();
-		this.insert();
 	}
 	exports.DateTimePicker = DateTimePicker;
 })(window);

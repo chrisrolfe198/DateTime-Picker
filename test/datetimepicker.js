@@ -4,9 +4,9 @@ describe("DateTimePicker", function() {
   describe("constructor", function() {
     it("should have a date set by default equal to now", function() {
       var datetimepicker = new DateTimePicker();
-      var now = new Date().getTime();
+      var now = Math.round(new Date().getTime() / 1000);
       // Add a few seconds for leeway
-      expect(datetimepicker.currentDate.getTime()).to.within(now - 2, now);
+      expect(Math.round(datetimepicker.currentDate.getTime() / 1000)).to.within(now - 2, now);
     });
  
     it("should set a date if one is provided", function() {
