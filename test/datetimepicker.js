@@ -3,13 +3,15 @@ var expect = chai.expect;
 describe("DateTimePicker", function() {
   describe("constructor", function() {
     it("should have a date set by default equal to now", function() {
-      var cow = new DateTimePicker();
-      expect(cow.currentDate.getTime()).to.equal(new Date().getTime());
+      var datetimepicker = new DateTimePicker();
+      var now = new Date().getTime();
+      // Add a few seconds for leeway
+      expect(datetimepicker.currentDate.getTime()).to.within(now - 2, now);
     });
  
     it("should set a date if one is provided", function() {
-      var cow = new DateTimePicker("Tuesday, 24 February 2015");
-      expect(Math.round(cow.currentDate.getTime() / 1000))
+      var datetimepicker = new DateTimePicker(null, "Tuesday, 24 February 2015");
+      expect(Math.round(datetimepicker.currentDate.getTime() / 1000))
         .to.equal(Math.round(new Date("Tuesday, 24 February 2015").getTime() / 1000));
     });
   });

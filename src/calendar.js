@@ -14,7 +14,7 @@
 	}
 	exports.Calendar = Calendar;
 
-	Calendar.prototype.generateHTML = function(){
+	Calendar.prototype.generate_html = function(){
 		var firstDay = new Date(this.year, this.month, 1);
 		var startingDay = firstDay.getDay();
 		var monthLength = this.days_in_month[this.month];
