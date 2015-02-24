@@ -26,6 +26,12 @@
   },
   "homepage": "https://github.com/christopherrolfe198/DateTime-Picker",
   "devDependencies": {
-    "chai": "^2.1.0"
+    "chai": "^2.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-clean": "^0.2.4",
+    "gulp-uglify": "^0.2.1",
+    "gulp-notify": "^1.2.5",
+    "gulp-jshint": "^1.5.3"
   }
 }
