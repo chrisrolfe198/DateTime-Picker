@@ -1,0 +1,31 @@
+{
+  "name": "DateTime-Picker",
+  "version": "1.0.0",
+  "description": "A simple pure JS date time picker",
+  "main": "dist/main.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christopherrolfe198/DateTime-Picker.git"
+  },
+  "keywords": [
+    "datetime",
+    "datepicker",
+    "date",
+    "time"
+  ],
+  "author": "Christopher Rolfe <christopher.rolfe198@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christopherrolfe198/DateTime-Picker/issues"
+  },
+  "homepage": "https://github.com/christopherrolfe198/DateTime-Picker",
+  "devDependencies": {
+    "chai": "^2.1.0"
+  }
+}
